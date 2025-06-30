@@ -1,0 +1,134 @@
+[
+	{
+	  "title": "The Target (January 2020)",
+	  "prompt": "The coronavirus’ genome sequencing was completed by scientists in China and was released publicly. Which part of the virus would you have built your vaccine to target?",
+	  "choices": [
+		{
+		  "name": "The Whole Virus",
+		  "description": "A traditional vaccine approach; uses the entire inactivated virus to elicit a broad immune response."
+		},
+		{
+		  "name": "Spike (S) Proteins",
+		  "description": "A key surface protein; recognizes receptors and directs virus entry into cells."
+		},
+		{
+		  "name": "Membrane (M) Proteins",
+		  "description": "A structural protein; vital for the virus’ structure and assembly, but less exposed on the surface."
+		},
+		{
+		  "name": "Envelope (E) Proteins",
+		  "description": "A small structural protein; important for the virus’ complete life cycle, but present in low numbers."
+		}
+	  ],
+	  "decision": {
+		"answer": [1],
+		"description": "Thanks to crucial prior research on SARS and MERS, the Spike protein was found as the main key the virus uses to infect human cells. However, they still had to gamble that targeting just this would be enough for a sufficient immune response. This was the first and one of the most important consensuses made.",
+		"sources": [
+		  "https://www.nih.gov/news-events/nih-research-matters/novel-coronavirus-structure-reveals-targets-vaccines-treatments",
+		  "https://www.nature.com/articles/s41577-020-00480-0"
+		]
+	  }
+	},
+	{
+	  "title": "The Molecular Blueprint (January 2020)",
+	  "prompt": "We’ve chosen to target the Spike Protein. However, it changes shape before and after it infects a cell. An immune response to the post-infection shape would be useless. What approach would you have used to target this dynamic nature of the Spike Protein?",
+	  "choices": [
+		{
+		  "name": "Use the Natural Spike Sequence",
+		  "description": "Use the genetic code for the Spike protein as found in the virus."
+		},
+		{
+		  "name": "Engineer a Stabilized Spike",
+		  "description": "Use molecular engineering to “lock” the spike protein into its pre-infection state in exchange for additional research time."
+		}
+	  ],
+	  "decision": {
+		"answer": [1],
+		"description": "LUCKILY, researchers at the NIH's Vaccine Research Center had already developed this \"2P\" proline-locking technique for MERS back in 2017. They shared this discovery, and it was adopted by nearly all major vaccine makers (Moderna, Pfizer/BioNTech, J&J, Novavax). This was a critical, behind-the-scenes decision that dramatically increased the effectiveness of the resulting vaccines.",
+		"sources": [
+		  "https://www.science.org/doi/10.1126/science.abb2507",
+		  "Immunogenicity and structures of a rationally designed prefusion MERS-CoV spike antigen | PNAS"
+		]
+	  }
+	},
+	{
+	  "title": "The Technology Platform (January - February 2020)",
+	  "prompt": "You've successfully engineered the ideal Spike protein target. But how will you deliver the genetic blueprint or the protein itself into the human body? This isn't just a scientific challenge but also a manufacturing and logistical gamble.",
+	  "choices": [
+		{
+		  "name": "mRNA",
+		  "description": "A new, unproven platform. Use messenger RNA to instruct human cells to build the Spike protein. Fastest to design, but had never been used in an approved vaccine."
+		},
+		{
+		  "name": "Viral Vector",
+		  "description": "A more established (but still modern) platform. Hide the Spike protein gene inside another harmless virus to deliver it. Faster than Protein Subunit, but slower than mRNA."
+		},
+		{
+		  "name": "Protein Subunit",
+		  "description": "The most traditional method. Produce the stabilized Spike proteins in a lab and inject them directly. Slower to scale."
+		}
+	  ],
+	  "decision": {
+		"answer": [0, 1, 2],
+		"description": "Different teams bet on different methods. Moderna and Pfizer/BioNTech made the high-risk bet on mRNA. AstraZeneca and J&J chose the viral vector. Novavax pursued the protein subunit.",
+		"sources": ["https://www.who.int/publications/m/item/draft-landscape-of-covid-19-candidate-vaccines"]
+	  }
+	},
+	{
+	  "title": "Manufacturing (Summer 2020)",
+	  "prompt": "Phase 3 trials were underway, but results are still months away. However, building the factories and supply chains to make a billion doses will take almost a year. When would you start manufacturing?",
+	  "choices": [
+		{
+		  "name": "Wait for Results",
+		  "description": "Don’t waste valuable resources in such a desperate time to assure there’s enough for an actual working solution."
+		},
+		{
+		  "name": "Manufacture \"At-Risk\"",
+		  "description": "Begin mass-producing millions of doses of the vaccine before the Phase 3 results were in."
+		}
+	  ],
+	  "decision": {
+		"answer": [1],
+		"description": "Fueled by programs like Operation Warp Speed, companies took a massive financial gamble. This is the single biggest reason doses were available the day after the vaccine was authorized. If the trials had failed, all those doses would have been destroyed.",
+		"sources": ["https://www.gao.gov/products/gao-21-319"]
+	  }
+	},
+	{
+	  "title": "The Placebo Dilemma (November 2020)",
+	  "prompt": "The first results are in, and they are spectacular—over 90% efficacy! Now an ethical crisis emerges: what about the 20,000+ volunteers in the trial who received a placebo?",
+	  "choices": [
+		{
+		  "name": "Maintain the Blind",
+		  "description": "Keep the trial going as planned for another year or two to gather long-term data, leaving the placebo group unprotected. This would yield the purest long-term data."
+		},
+		{
+		  "name": "Unblind the Trial",
+		  "description": "Inform all participants which shot they received and offer the real vaccine to everyone in the placebo group. This is ethically sound but complicates long-term data collection leaving you without a direct comparison group."
+		}
+	  ],
+	  "decision": {
+		"answer": [1],
+		"description": "The decision was unanimous among researchers, ethics boards, and the companies. It was deemed unethical to ask volunteers to remain unvaccinated when a highly effective vaccine was available.",
+		"sources": ["https://www.nejm.org/doi/full/10.1056/nejmoa2034577"]
+	  }
+	},
+	{
+	  "title": "The Variant Curveball (Winter 2021)",
+	  "prompt": "Just as the rollout was scaling up, new, more transmissible variants (first Alpha, then Delta) emerged that had mutations in the Spike protein. What do you do?",
+	  "choices": [
+		{
+		  "name": "Go Back to the Lab",
+		  "description": "Halt the current vaccine program and use the fast mRNA platform to design, test, and manufacture a new, variant-specific vaccine. This would take at least 3-4 months."
+		},
+		{
+		  "name": "Stay the Course",
+		  "description": "Continue rolling out the original vaccine, betting that the powerful immune response it generated would still be effective at preventing the most severe outcomes, even if it was less effective at stopping mild infections."
+		}
+	  ],
+	  "decision": {
+		"answer": [1],
+		"description": "Lab studies quickly confirmed that while the original vaccines' ability to block all infection was reduced, their effectiveness against hospitalization and death remained remarkably high. The decision was to prioritize preventing severe disease with the tools they had, while simultaneously beginning development on updated boosters for the future.",
+		"sources": ["https://www.cdc.gov/mmwr/volumes/70/wr/mm7037e2.htm"]
+	  }
+	}
+  ]
