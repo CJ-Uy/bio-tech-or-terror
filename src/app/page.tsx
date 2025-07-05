@@ -1,103 +1,124 @@
-import Image from "next/image";
+"use client"; // This is necessary for client-side functionality in Next.js
+
+import { useState, useEffect } from "react";
+import Link from "next/link";
+import TitleCard from "@/components/content/1-titleCard";
+import Definition from "@/components/content/2-definition";
+import Types from "@/components/content/3-types";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+	const [activeSection, setActiveSection] = useState(null);
+	const [scrolledSections, setScrolledSections] = useState({}); // To track completed sections
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+	useEffect(() => {
+		const sectionIds = ["title-card", "definition", "types"];
+
+		const observer = new IntersectionObserver(
+			(entries) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						setActiveSection(entry.target.id);
+						// Mark the section as scrolled past once it's been in view
+						setScrolledSections((prev) => ({
+							...prev,
+							[entry.target.id]: true,
+						}));
+					}
+				});
+			},
+			{
+				threshold: 0.5, // Trigger when 50% of the section is visible
+				// rootMargin: '-100px 0px -100px 0px', // Adjust if header/footer is covering content
+			},
+		);
+
+		sectionIds.forEach((id) => {
+			const element = document.getElementById(id);
+			if (element) {
+				observer.observe(element);
+			}
+		});
+
+		// Clean up the observer when the component unmounts
+		return () => {
+			sectionIds.forEach((id) => {
+				const element = document.getElementById(id);
+				if (element) {
+					observer.unobserve(element);
+				}
+			});
+		};
+	}, []); // Empty dependency array means this runs once on mount
+
+	// Function to determine dot color
+	const getDotColor = (sectionId) => {
+		if (activeSection === sectionId) {
+			return "bg-blue-300"; // Active section color (you can choose any color)
+		} else if (scrolledSections[sectionId]) {
+			// Check if the current scroll position is past this section
+			// A simple way to determine "done with a section" is if it was previously active
+			// or if the current active section is further down the page.
+			const currentActiveIndex = ["title-card", "definition", "types"].indexOf(activeSection);
+			const sectionIndex = ["title-card", "definition", "types"].indexOf(sectionId);
+
+			if (sectionIndex < currentActiveIndex) {
+				return "bg-gray-400";
+			}
+		}
+		return "bg-white";
+	};
+
+	return (
+		<div>
+			{/* Fixed Components */}
+			<header className="fixed top-0 z-10 flex w-screen flex-row items-center bg-gray-100 p-5 text-2xl">
+				<h1 className="font-koulen text-4xl font-semibold tracking-wider">BTT</h1>
+				<span className="flex-grow"></span>
+				<div className="font-dm_sans flex flex-row items-center gap-10">
+					<Link href="/" className="transition-colors hover:text-blue-600">
+						HOME
+					</Link>
+					<Link href="/about" className="transition-colors hover:text-blue-600">
+						ABOUT
+					</Link>
+					<Link href="/covid-scientist-simulator" className="transition-colors hover:text-blue-600">
+						SIMULATION
+					</Link>
+				</div>
+			</header>
+			<nav className="fixed top-1/2 left-5 z-10 flex -translate-y-1/2 flex-col items-center justify-center gap-y-4 rounded-xl bg-[#7CF2A0] p-3 shadow-sm shadow-[#1e1e1e]">
+				<a
+					href="#title-card"
+					className={`group relative h-3 w-3 rounded-full shadow-sm shadow-[#1e1e1e] transition-colors duration-200 ${getDotColor("title-card")}`}
+				>
+					<span className="absolute top-1/2 -left-20 -translate-y-1/2 transform rounded bg-black px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+						Title Card
+					</span>
+				</a>
+				<a
+					href="#definition"
+					className={`group relative h-3 w-3 rounded-full shadow-sm shadow-[#1e1e1e] transition-colors duration-200 ${getDotColor("definition")}`}
+				>
+					<span className="absolute top-1/2 -left-20 -translate-y-1/2 transform rounded bg-black px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+						Definition
+					</span>
+				</a>
+				<a
+					href="#types"
+					className={`group relative h-3 w-3 rounded-full shadow-sm shadow-[#1e1e1e] transition-colors duration-200 ${getDotColor("types")}`}
+				>
+					<span className="absolute top-1/2 -left-20 -translate-y-1/2 transform rounded bg-black px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+						Types
+					</span>
+				</a>
+			</nav>
+			{/* Margin top to compensate for the header height */}
+			{/* prettier-ignore */}
+			<div className="pt-20">
+        <span id="title-card"> <TitleCard /> </span>
+        <span id="definition"> <Definition /> </span>
+        <span id="types"> <Types /> </span>
+      </div>
+		</div>
+	);
 }
