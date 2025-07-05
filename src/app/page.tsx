@@ -88,7 +88,7 @@ export default function Home() {
 						href={`#${section.id}`}
 						className={`group relative h-3 w-3 rounded-full shadow-sm shadow-[#1e1e1e] transition-colors duration-200 ${getDotColor(section.id)}`}
 					>
-						<span className="absolute top-1/2 -left-20 -translate-y-1/2 transform rounded bg-black px-2 py-1 text-xs whitespace-nowrap text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+						<span className="absolute top-1/2 left-full ml-4 -translate-y-1/2 transform rounded bg-black px-2 py-1 text-left text-xs whitespace-nowrap text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 							{section.label}
 						</span>
 					</a>
