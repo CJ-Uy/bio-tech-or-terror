@@ -64,7 +64,7 @@ export default function Home() {
 	return (
 		<div>
 			{/* Header */}
-			<header className="fixed top-0 z-10 flex w-screen flex-row items-center bg-gray-100 p-5 text-2xl">
+			<header className="fixed top-0 left-0 z-10 flex w-full flex-row items-center bg-gray-100 p-5 text-2xl">
 				<h1 className="font-koulen text-4xl font-semibold tracking-wider">BTT</h1>
 				<span className="flex-grow"></span>
 				<div className="font-dm_sans flex flex-row items-center gap-10">
@@ -98,7 +98,7 @@ export default function Home() {
 			{/* Content */}
 			<div className="pt-20">
 				{sections.map(({ id, Component }) => (
-					<span key={id} id={id}>
+					<span key={id} id={id} className="h-[calc(100vh-5rem)]">
 						<Component />
 					</span>
 				))}
