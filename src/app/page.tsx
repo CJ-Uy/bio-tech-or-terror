@@ -3,12 +3,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import TitleCard from "@/components/content/1-titleCard";
-import Definition from "@/components/content/2-definition";
-import Types from "@/components/content/3-types";
+import Introduction from "@/components/content/2-introduction";
+import Definition from "@/components/content/3-definition";
+import Types from "@/components/content/4-types";
 
 // SINGLE SOURCE OF TRUTH FOR SECTIONS
 const sections = [
 	{ id: "title-card", label: "Title Card", Component: TitleCard },
+	{ id: "introduction", label: "Introduction", Component: Introduction },
 	{ id: "definition", label: "Definition", Component: Definition },
 	{ id: "types", label: "Types", Component: Types },
 ];

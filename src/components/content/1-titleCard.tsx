@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function TitleCard() {
 	return (
-		<main className="relative flex h-[calc(100vh-6rem)] items-center justify-center overflow-hidden bg-gradient-to-b from-[#89F6CB] to-[#1E1E1E]">
+		<main className="relative flex h-[calc(100vh-15rem)] items-center justify-center overflow-hidden bg-gradient-to-b from-[#89F6CB] to-[#1E1E1E]">
 			{/* Noise overlay for the grainy texture */}
 			<div className="absolute inset-0 h-full w-full bg-[url(/svgs/noise.svg)] opacity-50"></div>
 
