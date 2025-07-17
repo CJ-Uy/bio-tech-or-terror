@@ -61,6 +61,19 @@ export default function Home() {
 		return "bg-white";
 	};
 
+	const scrollToSection = (sectionId) => {
+		const element = document.getElementById(sectionId);
+		if (element) {
+			const headerHeight = 80;
+			const elementPosition = element.offsetTop - headerHeight;
+
+			window.scrollTo({
+				top: elementPosition,
+				behavior: "smooth",
+			});
+		}
+	};
+
 	return (
 		<div>
 			{/* Header */}
@@ -83,15 +96,15 @@ export default function Home() {
 			{/* Navigation Dots */}
 			<nav className="fixed top-1/2 left-5 z-10 flex -translate-y-1/2 flex-col items-center justify-center gap-y-4 rounded-xl bg-[#7CF2A0] p-3 shadow-sm shadow-[#1e1e1e]">
 				{sections.map((section) => (
-					<a
+					<button
 						key={section.id}
-						href={`#${section.id}`}
+						onClick={() => scrollToSection(section.id)}
 						className={`group relative h-3 w-3 rounded-full shadow-sm shadow-[#1e1e1e] transition-colors duration-200 ${getDotColor(section.id)}`}
 					>
 						<span className="absolute top-1/2 left-full ml-4 -translate-y-1/2 transform rounded bg-black px-2 py-1 text-left text-xs whitespace-nowrap text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
 							{section.label}
 						</span>
-					</a>
+					</button>
 				))}
 			</nav>
 
