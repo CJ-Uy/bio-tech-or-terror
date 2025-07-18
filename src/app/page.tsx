@@ -83,14 +83,11 @@ export default function Home() {
 				<h1 className="font-koulen text-4xl font-semibold tracking-wider">BTT</h1>
 				<span className="flex-grow"></span>
 				<div className="font-dm_sans flex flex-row items-center gap-10">
-					<Link href="/" className="transition-colors hover:text-blue-600">
-						HOME
+					<Link href="/covid-scientist-simulator" className="transition-colors hover:text-blue-600">
+						SIMULATION
 					</Link>
 					<Link href="/about" className="transition-colors hover:text-blue-600">
 						ABOUT
-					</Link>
-					<Link href="/covid-scientist-simulator" className="transition-colors hover:text-blue-600">
-						SIMULATION
 					</Link>
 				</div>
 			</header>
