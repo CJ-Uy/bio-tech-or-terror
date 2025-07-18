@@ -55,24 +55,24 @@ export default function Definition() {
 						and its potential uses by the state and, considerably, the non-state actors. However
 						recent definitions are more broader including the following:
 					</div>
-					<div className="my-4 space-y-8">
+					<div className="my-0 space-y-4 py-0">
 						{/* Item 1 */}
 						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">1</span>
 							</div>
 							<p className="font-dm_sans italic">a diverse array of potential biological agents</p>
 						</div>
 						{/* Item 2 */}
-						<div className="flex flex-row-reverse items-center justify-start gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+						<div className="flex items-center gap-6">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">2</span>
 							</div>
-							<p className="font-dm_sans text-right italic">broad range of potential targets</p>
+							<p className="font-dm_sans italic">broad range of potential targets</p>
 						</div>
 						{/* Item 3 */}
 						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">3</span>
 							</div>
 							<p className="font-dm_sans italic">
