@@ -93,7 +93,7 @@ export default function Home() {
 			</header>
 
 			{/* Navigation Dots */}
-			<nav className="fixed top-1/2 left-5 z-10 flex -translate-y-1/2 flex-col items-center justify-center gap-y-4 rounded-xl bg-[#7CF2A0] p-3 shadow-sm shadow-[#1e1e1e]">
+			<nav className="fixed -rotate-90 bottom-0 left-1/2 -translate-x-1/2 md:-translate-0 md:bottom-auto md:rotate-0 md:scale-none md:top-1/2 md:left-5 z-10 flex md:-translate-y-1/2 flex-col items-center justify-center gap-y-4 rounded-xl bg-[#7CF2A0] p-3 shadow-sm shadow-[#999999]">
 				{sections.map((section) => (
 					<button
 						key={section.id}
