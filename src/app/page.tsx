@@ -108,7 +108,7 @@ export default function Home() {
 			</header>
 
 			{/* Navigation Dots */}
-			<nav className="fixed bottom-0 left-1/2 z-10 flex -translate-x-1/2 -rotate-90 flex-col items-center justify-center gap-y-4 rounded-xl bg-[#7CF2A0] p-3 shadow-sm shadow-[#999999] md:top-1/2 md:bottom-auto md:left-5 md:-translate-0 md:-translate-y-1/2 md:scale-none md:rotate-0">
+			<nav className="fixed -bottom-[11.5%] left-1/2 z-10 flex -translate-x-1/2 -rotate-90 flex-col items-center justify-center gap-y-4 rounded-xl bg-[#7CF2A0] p-3 shadow-sm shadow-[#999999] md:top-1/2 md:bottom-auto md:left-5 md:-translate-0 md:-translate-y-1/2 md:scale-none md:rotate-0">
 				{sections.map((section) => (
 					<button
 						key={section.id}
