@@ -29,6 +29,20 @@ export default function DevelopmentInBiotechnologyFromTheCOVID19Experience() {
 					<h3 className="-mb-3 text-justify text-3xl font-bold md:text-center">
 						Development of Preparation & Mitigation Strategies
 					</h3>
+					<div>
+						<div className="flex items-center justify-center">
+							<Image
+								src="/svgs/covid.svg"
+								alt="petri dish"
+								width={300}
+								height={200}
+								className="md:w-[70%] w-[100%] h-auto"
+							/>
+						</div>
+						<a className="ml-[15%]" href="https://static01.nyt.com/images/2020/03/24/world/24china-virus01/merlin_170897688_a14ebbe8-c857-40c8-ba76-3eb796db86c1-superJumbo.jpg?quality=75&auto=webp">
+							Source: The New York Times
+						</a>
+					</div>
 					<div className="text-justify">
 						The recent COVID-19 experience exposed the global community&apos;s lack of preparedness
 						for a rapid pandemic virus spread, resulting in significant human morbidities and
