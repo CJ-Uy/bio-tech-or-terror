@@ -6,6 +6,7 @@ import TitleCard from "@/components/content/1-titleCard";
 import Introduction from "@/components/content/2-introduction";
 import Definition from "@/components/content/3-definition";
 import BiotechForBad from "@/components/content/4-biotech-for-bad";
+import WhatInstitutionsCanDo from "@/components/content/6-whatInstitutionsCanDo";
 import WhatYouCanDo from "@/components/content/7-whatYouCanDo";
 import PhBiowarfare from "@/components/content/8-phBiowarfare";
 import MovingForward from "@/components/content/9-movingForward";
@@ -17,6 +18,11 @@ const sections = [
 	{ id: "introduction", label: "Introduction", Component: Introduction },
 	{ id: "definition", label: "Definition", Component: Definition },
 	{ id: "biotech-for-bad", label: "Biotech For Bad", Component: BiotechForBad },
+	{
+		id: "what-institutions-can-do",
+		label: "WhatInstitutionsCanDo",
+		Component: WhatInstitutionsCanDo,
+	},
 	{ id: "what-you-can-do", label: "What You Can Do", Component: WhatYouCanDo },
 	{
 		id: "ph-biowarfare",
