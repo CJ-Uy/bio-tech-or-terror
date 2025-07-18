@@ -7,6 +7,7 @@ import Introduction from "@/components/content/2-introduction";
 import Definition from "@/components/content/3-definition";
 import BiotechForBad from "@/components/content/4-biotech-for-bad";
 import WhatYouCanDo from "@/components/content/7-whatYouCanDo";
+import PhBiowarfare from "@/components/content/8-phBiowarfare";
 
 // SINGLE SOURCE OF TRUTH FOR SECTIONS
 const sections = [
@@ -15,6 +16,11 @@ const sections = [
 	{ id: "definition", label: "Definition", Component: Definition },
 	{ id: "biotech-for-bad", label: "Biotech For Bad", Component: BiotechForBad },
 	{ id: "what-you-can-do", label: "What You Can Do", Component: WhatYouCanDo },
+	{
+		id: "ph-biowarfare",
+		label: "The Philippines' Role in Biowarfare Discourse",
+		Component: PhBiowarfare,
+	},
 ];
 
 export default function Home() {
