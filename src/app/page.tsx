@@ -5,7 +5,7 @@ import Link from "next/link";
 import TitleCard from "@/components/content/1-titleCard";
 import Introduction from "@/components/content/2-introduction";
 import Definition from "@/components/content/3-definition";
-import Types from "@/components/content/4-types";
+import BiotechForBad from "@/components/content/4-biotech-for-bad";
 import WhatYouCanDo from "@/components/content/7-whatYouCanDo";
 
 // SINGLE SOURCE OF TRUTH FOR SECTIONS
@@ -13,7 +13,7 @@ const sections = [
 	{ id: "title-card", label: "Title Card", Component: TitleCard },
 	{ id: "introduction", label: "Introduction", Component: Introduction },
 	{ id: "definition", label: "Definition", Component: Definition },
-	{ id: "types", label: "Types", Component: Types },
+	{ id: "biotech-for-bad", label: "Biotech For Bad", Component: BiotechForBad },
 	{ id: "what-you-can-do", label: "What You Can Do", Component: WhatYouCanDo },
 ];
 
@@ -95,7 +95,7 @@ export default function Home() {
 			</header>
 
 			{/* Navigation Dots */}
-			<nav className="fixed -rotate-90 bottom-0 left-1/2 -translate-x-1/2 md:-translate-0 md:bottom-auto md:rotate-0 md:scale-none md:top-1/2 md:left-5 z-10 flex md:-translate-y-1/2 flex-col items-center justify-center gap-y-4 rounded-xl bg-[#7CF2A0] p-3 shadow-sm shadow-[#999999]">
+			<nav className="fixed bottom-0 left-1/2 z-10 flex -translate-x-1/2 -rotate-90 flex-col items-center justify-center gap-y-4 rounded-xl bg-[#7CF2A0] p-3 shadow-sm shadow-[#999999] md:top-1/2 md:bottom-auto md:left-5 md:-translate-0 md:-translate-y-1/2 md:scale-none md:rotate-0">
 				{sections.map((section) => (
 					<button
 						key={section.id}

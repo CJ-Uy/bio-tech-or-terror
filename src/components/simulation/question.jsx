@@ -19,12 +19,12 @@ export default function Question({ question }) {
 	return (
 		<div className="animate-fade-in flex w-full flex-col items-center">
 			{/* Question Text */}
-			<h2 className="mb-4 text-5xl font-bold tracking-wider text-black uppercase">
+			<h2 className="font-koulen mb-4 text-5xl tracking-wider text-black uppercase">
 				{question.title}
 			</h2>
 
 			{/* Subtext/Prompt */}
-			<p className="mb-12 max-w-3xl text-lg text-black">{question.prompt}</p>
+			<p className="font-dm_sans mb-12 max-w-3xl text-lg text-black">{question.prompt}</p>
 
 			{/* Options Grid */}
 			<div className="grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
@@ -62,8 +62,8 @@ export default function Question({ question }) {
 							className={`${choiceButtonStyle} ${getButtonClasses()}`}
 							disabled={hasAnswered}
 						>
-							<h3 className="text-2xl font-bold">{choice.name}</h3>
-							<p className="mt-2 text-base font-normal">{choice.description}</p>
+							<h3 className="font-koulen text-2xl">{choice.name}</h3>
+							<p className="font-dm_sans mt-2 text-base">{choice.description}</p>
 						</button>
 					);
 				})}
@@ -72,10 +72,10 @@ export default function Question({ question }) {
 			{/* Answered Output Mode - Context and Sources */}
 			{hasAnswered && (
 				<div className="animate-fade-in mt-12 w-full max-w-4xl p-6 text-left">
-					<h2 className="text-2xl font-bold text-black uppercase">Context:</h2>
-					<p className="mt-2 text-base text-black">
+					<h2 className="font-koulen text-2xl text-black uppercase">Context:</h2>
+					<p className="font-dm_sans mt-2 text-base text-black">
 						{question.decision.description}
-						<div className="text-right font-semibold">
+						<div className="font-dm_sans text-right">
 							{"Sources: "}
 							{question.decision.sources.map((source, index) => (
 								<Link

@@ -61,8 +61,8 @@ export default function Page() {
 					{qIndex === -1 ? (
 						// Intro Screen
 						<div className="animate-fade-in flex flex-col items-center">
-							<h1 className="mb-4 text-5xl font-bold text-black">COVID-19 Scientist Simulator</h1>
-							<p className="mb-8 max-w-2xl text-lg text-black">
+							<h1 className="font-koulen mb-4 text-5xl text-black">COVID-19 Scientist Simulator</h1>
+							<p className="font-dm_sans mb-8 max-w-2xl text-lg text-black">
 								In this short simulation, go over the decisions scientists had to make as they
 								developed the first COVID-19 vaccine comparing them to your very own. Step into
 								their shoes of uncertainty and lack of hindsight to make critical decisions to save
@@ -70,7 +70,7 @@ export default function Page() {
 							</p>
 							<Button
 								onClick={handleStartSimulation}
-								className="transform rounded-lg bg-white/90 px-10 py-3 font-semibold text-gray-800 shadow-md transition-all duration-300 hover:scale-105 hover:bg-white"
+								className="font-dm_sans transform rounded-lg bg-white/90 px-10 py-3 text-gray-800 shadow-md transition-all duration-300 hover:scale-105 hover:bg-white"
 							>
 								Start Simulation
 							</Button>
