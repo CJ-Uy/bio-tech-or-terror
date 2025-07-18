@@ -47,7 +47,7 @@ export default function Home() {
 				});
 			},
 			{
-				threshold: 0.5,
+				threshold: 0.2,
 			},
 		);
 
@@ -65,15 +65,10 @@ export default function Home() {
 	}, []);
 
 	const getDotColor = (sectionId) => {
-		const ids = sections.map((s) => s.id);
-		const currentActiveIndex = ids.indexOf(activeSection);
-		const sectionIndex = ids.indexOf(sectionId);
-
 		if (activeSection === sectionId) {
 			return "bg-blue-300";
-		} else if (scrolledSections[sectionId] && sectionIndex < currentActiveIndex) {
-			return "bg-gray-400";
 		}
+
 		return "bg-white";
 	};
 
