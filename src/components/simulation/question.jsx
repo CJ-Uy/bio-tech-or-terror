@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Question({ question }) {
 	const [hasAnswered, setHasAnswered] = useState(false);
@@ -11,55 +12,84 @@ export default function Question({ question }) {
 		setSelectedChoiceIndex(index);
 	}
 
+	// Base style for all choice buttons. NO border or outline here.
+	const choiceButtonStyle =
+		"rounded-xl p-6 text-left text-black shadow-md transition-all duration-300 transform";
+
 	return (
-		<div className="flex flex-grow flex-col items-center justify-center px-4 text-center">
-			<h1 className="text-3xl font-bold">{question.title}</h1>
-			<p className="mt-5 mb-10">{question.prompt}</p>
+		<div className="animate-fade-in flex w-full flex-col items-center">
+			{/* Question Text */}
+			<h2 className="mb-4 text-5xl font-bold tracking-wider text-black uppercase">
+				{question.title}
+			</h2>
 
-			{/* Question Input Mode */}
-			{hasAnswered === false && (
-				<div className="flex w-full flex-wrap items-stretch justify-center gap-1 md:gap-5">
-					{question.choices.map((choice, index) => (
-						<div
-							key={index}
-							className="mb-2 flex w-75 flex-auto flex-col rounded-lg border-2 border-black bg-gray-100 p-4 text-left transition-shadow duration-200 hover:bg-gray-200 hover:shadow-md"
-							onClick={() => handleShowSolution(index)}
-						>
-							<h2 className="mb-2 text-xl font-semibold">{choice.name}</h2>
-							<p className="flex-grow">{choice.description}</p>
-						</div>
-					))}
-				</div>
-			)}
+			{/* Subtext/Prompt */}
+			<p className="mb-12 max-w-3xl text-lg text-black">{question.prompt}</p>
 
-			{/* Answered Output Mode */}
-			{hasAnswered === true && (
-				<div className="flex w-full flex-wrap items-stretch justify-center gap-1 md:gap-5">
-					{question.choices.map((choice, index) => (
-						<div
+			{/* Options Grid */}
+			<div className="grid w-full max-w-4xl grid-cols-1 gap-6 md:grid-cols-2">
+				{question.choices.map((choice, index) => {
+					const isScientistAnswer = hasAnswered && question.decision.answer.includes(index);
+					const isSelected = index === selectedChoiceIndex;
+
+					// This logic now uses `outline` which does not affect layout
+					const getButtonClasses = () => {
+						const baseBg = "bg-gradient-to-b from-white to-gray-200";
+						const blueBg = "bg-gradient-to-b from-[#89E4FF] to-[#748FE0]";
+						const selectedOutline = "outline outline-[4px] outline-dotted outline-black";
+
+						// State 1: Before any answer is chosen
+						if (!hasAnswered) {
+							return `cursor-pointer ${baseBg} hover:scale-105`;
+						}
+
+						const baseAnsweredStyle = "cursor-default";
+
+						// State 2: After an answer is chosen
+						if (isSelected) {
+							// Apply the black dotted outline to the selected item
+							return `${baseAnsweredStyle} ${isScientistAnswer ? blueBg : `${baseBg} opacity-70`} ${selectedOutline}`;
+						} else {
+							// All other non-selected items have no outline
+							return `${baseAnsweredStyle} ${isScientistAnswer ? blueBg : `${baseBg} opacity-70`}`;
+						}
+					};
+
+					return (
+						<button
 							key={index}
-							className={`mb-2 flex w-75 flex-auto flex-col rounded-lg border-2 border-black p-4 text-left ${question.decision.answer.includes(index) ? `bg-blue-200` : `bg-gray-100`} ${index === selectedChoiceIndex ? `border-dashed` : ``} `}
+							onClick={() => !hasAnswered && handleShowSolution(index)}
+							className={`${choiceButtonStyle} ${getButtonClasses()}`}
+							disabled={hasAnswered}
 						>
-							<h2 className="mb-2 text-xl font-semibold">{choice.name}</h2>
-							<p className="flex-grow">{choice.description}</p>
-						</div>
-					))}
-					<div>
-						<h2 className="text-xl font-semibold">Context</h2>
-						<p className="text-justify">{question.decision.description}</p>
-						<h3 className="mt-3 text-lg">Sources</h3>
-						{question.decision.sources.map((source, index) => (
-							<p>
-								<a
+							<h3 className="text-2xl font-bold">{choice.name}</h3>
+							<p className="mt-2 text-base font-normal">{choice.description}</p>
+						</button>
+					);
+				})}
+			</div>
+
+			{/* Answered Output Mode - Context and Sources */}
+			{hasAnswered && (
+				<div className="animate-fade-in mt-12 w-full max-w-4xl p-6 text-left">
+					<h2 className="text-2xl font-bold text-black uppercase">Context:</h2>
+					<p className="mt-2 text-base text-black">
+						{question.decision.description}
+						<div className="text-right font-semibold">
+							{"Sources: "}
+							{question.decision.sources.map((source, index) => (
+								<Link
 									key={index}
 									href={source}
-									className="text-blue-500 underline hover:text-blue-700"
+									target="_blank"
+									rel="noopener noreferrer"
+									className="text-blue-700 hover:text-blue-500"
 								>
-									{source}
-								</a>
-							</p>
-						))}
-					</div>
+									 [{index + 1}] 
+								</Link>
+							))}
+						</div>
+					</p>
 				</div>
 			)}
 		</div>
