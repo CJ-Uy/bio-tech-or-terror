@@ -8,6 +8,7 @@ import Definition from "@/components/content/3-definition";
 import BiotechForBad from "@/components/content/4-biotech-for-bad";
 import WhatYouCanDo from "@/components/content/7-whatYouCanDo";
 import PhBiowarfare from "@/components/content/8-phBiowarfare";
+import MovingForward from "@/components/content/9-movingForward";
 
 // SINGLE SOURCE OF TRUTH FOR SECTIONS
 const sections = [
@@ -20,6 +21,11 @@ const sections = [
 		id: "ph-biowarfare",
 		label: "The Philippines' Role in Biowarfare Discourse",
 		Component: PhBiowarfare,
+	},
+	{
+		id: "moving-forward",
+		label: "Moving Forward",
+		Component: MovingForward,
 	},
 ];
 
@@ -123,6 +129,9 @@ export default function Home() {
 					</span>
 				))}
 			</div>
+
+			{/* Footer */}
+			<div className="mt-20"></div>
 		</div>
 	);
 }
