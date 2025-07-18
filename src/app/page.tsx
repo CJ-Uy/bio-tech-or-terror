@@ -6,6 +6,7 @@ import TitleCard from "@/components/content/1-titleCard";
 import Introduction from "@/components/content/2-introduction";
 import Definition from "@/components/content/3-definition";
 import Types from "@/components/content/4-types";
+import WhatYouCanDo from "@/components/content/7-whatYouCanDo";
 
 // SINGLE SOURCE OF TRUTH FOR SECTIONS
 const sections = [
@@ -13,6 +14,7 @@ const sections = [
 	{ id: "introduction", label: "Introduction", Component: Introduction },
 	{ id: "definition", label: "Definition", Component: Definition },
 	{ id: "types", label: "Types", Component: Types },
+	{ id: "what-you-can-do", label: "What You Can Do", Component: WhatYouCanDo },
 ];
 
 export default function Home() {
