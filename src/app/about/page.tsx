@@ -18,6 +18,16 @@ export default function About() {
 					</Link>
 				</div>
 			</header>
+
+			{/* Content */}
+			<div className="flex h-screen w-screen flex-col items-center justify-center">
+				<h1 className="text-bold font-koulen text-center text-7xl md:text-9xl">MitochonLIMA</h1>
+				<h2 className="text-center text-2xl mx-9 mb-5">
+					Bautisa, Jeconiah &nbsp;&nbsp;&nbsp; Celestino, Kenaz &nbsp;&nbsp;&nbsp; Figuerres, Kenaz
+					&nbsp;&nbsp;&nbsp; Manansala, Charlisze &nbsp;&nbsp;&nbsp; Uy, Charles Joshua
+				</h2>
+				<p>This project was created for our BIO 12.01-F. LOVE YOU MAAM FISHDALISCIOUS</p>
+			</div>
 		</div>
 	);
 }
