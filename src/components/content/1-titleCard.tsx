@@ -32,7 +32,7 @@ export default function TitleCard() {
 				<h1 className="text-shadow font-koulen text-5xl font-extrabold tracking-widest md:text-7xl">
 					BIO: TECH OR TERROR
 				</h1>
-				<h2 className="mt-2 text-lg text-gray-300 md:text-xl font-dm_sans">
+				<h2 className="font-dm_sans mt-2 text-lg text-gray-300 md:text-xl">
 					A Website Exploring Biotechnology used in and against Biowarfare
 				</h2>
 			</div>

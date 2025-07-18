@@ -37,24 +37,23 @@ export default function WhatYouCanDo() {
 					<div className="my-4 space-y-8">
 						{/* Item 1 */}
 						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">1</span>
 							</div>
 							<p className="italic">Have an emergency kit ready with supplies</p>
 						</div>
 						{/* Item 2 */}
 						<div className="flex items-center gap-6 md:flex-row-reverse md:justify-start">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">2</span>
 							</div>
 							<p className="italic md:text-right">
-								Have a plan for emergencies—where to go, who to contact, what things to bring,
-								etc.
+								Have a plan for emergencies—where to go, who to contact, what things to bring, etc.
 							</p>
 						</div>
 						{/* Item 3 */}
 						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">3</span>
 							</div>
 							<p className="italic">
@@ -64,7 +63,7 @@ export default function WhatYouCanDo() {
 						</div>
 						{/* Item 4 */}
 						<div className="flex items-center gap-6 md:flex-row-reverse md:justify-start">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">4</span>
 							</div>
 							<p className="italic md:text-right">
@@ -85,24 +84,23 @@ export default function WhatYouCanDo() {
 					<div className="my-4 space-y-8">
 						{/* Item 1 */}
 						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">1</span>
 							</div>
 							<p className="italic">Get away from areas with suspected suspicious substances.</p>
 						</div>
 						{/* Item 2 */}
 						<div className="flex items-center gap-6 md:flex-row-reverse md:justify-start">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">2</span>
 							</div>
 							<p className="italic md:text-right">
-								Practice good hygiene—frequently wash your hands with soap and wear clean
-								garments.
+								Practice good hygiene—frequently wash your hands with soap and wear clean garments.
 							</p>
 						</div>
 						{/* Item 3 */}
 						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">3</span>
 							</div>
 							<p className="italic">
@@ -112,14 +110,14 @@ export default function WhatYouCanDo() {
 						</div>
 						{/* Item 4 */}
 						<div className="flex items-center gap-6 md:flex-row-reverse md:justify-start">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">4</span>
 							</div>
 							<p className="italic md:text-right">Do not share food, water, or utensils.</p>
 						</div>
 						{/* Item 5 */}
 						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-[#73C3B0] to-[#53A694]">
+							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-sans text-4xl font-bold text-black">5</span>
 							</div>
 							<p className="italic">Avoid crowds of people.</p>
