@@ -11,6 +11,7 @@ import WhatYouCanDo from "@/components/content/7-whatYouCanDo";
 import PhBiowarfare from "@/components/content/8-phBiowarfare";
 import MovingForward from "@/components/content/9-movingForward";
 import References from "@/components/content/10-references";
+import BiotechForGood from "@/components/content/5-biotech-for-good";
 
 // SINGLE SOURCE OF TRUTH FOR SECTIONS
 const sections = [
@@ -18,6 +19,7 @@ const sections = [
 	{ id: "introduction", label: "Introduction", Component: Introduction },
 	{ id: "definition", label: "Definition", Component: Definition },
 	{ id: "biotech-for-bad", label: "Biotech For Bad", Component: BiotechForBad },
+	{ id: "biotech-for-good", label: "Biotech For Good", Component: BiotechForGood },
 	{
 		id: "what-institutions-can-do",
 		label: "WhatInstitutionsCanDo",

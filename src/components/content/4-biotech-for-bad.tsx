@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BioWeaponsTable from "./biotech-for-bad/BioWeaponsTable";
 
 export default function BiotechForBad() {
 	return (
@@ -212,6 +213,7 @@ export default function BiotechForBad() {
 						</div>
 					</div>
 					<h2 className="font-koulen text-2xl">Examples of Biological Agents</h2>
+					<BioWeaponsTable />
 				</div>
 				<div>
 					<div>
@@ -296,9 +298,172 @@ export default function BiotechForBad() {
 						the masses, resulting in blame-shifting of politicians and public figures under media
 						coverage.
 					</div>
-					<div>
+					<div className="!pb-0">
 						No matter how small the biological attacks are, it can reach strategic levels of success
 						depending on (Gisselsson, 2022):
+					</div>
+					<div className="my-0 py-0 [&>*]:!px-1 [&>*]:!py-1">
+						<div className="flex items-center gap-6">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+								<span className="font-koulen text-4xl font-bold text-black">1</span>
+							</div>
+							<p className="font-dm_sans italic">
+								How good the distraction helped complete the information war objective
+							</p>
+						</div>
+						<div className="flex items-center gap-6">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+								<span className="font-koulen text-4xl font-bold text-black">2</span>
+							</div>
+							<p className="font-dm_sans italic">
+								How it triggered mass worries by using the “contagiousness” of pathogens to instill
+								anxiety
+							</p>
+						</div>
+						<div className="flex items-center gap-6">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+								<span className="font-koulen text-4xl font-bold text-black">3</span>
+							</div>
+							<p className="font-dm_sans italic">
+								How it instigates fear of severe illnesses or death to the communities
+							</p>
+						</div>
+						<div className="flex items-center gap-6">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+								<span className="font-koulen text-4xl font-bold text-black">4</span>
+							</div>
+							<p className="font-dm_sans italic">
+								How the attack cannot be traced. An unknown origin of an biological attack is
+								helpful in directing conspiracy theories towards national institutions
+							</p>
+						</div>
+						<div className="flex items-center gap-6">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+								<span className="font-koulen text-4xl font-bold text-black">5</span>
+							</div>
+							<p className="font-dm_sans italic">
+								How it maximizes element of surprise and circumvent countermeasures of target
+								countries
+							</p>
+						</div>
+						<div className="flex items-center gap-6">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+								<span className="font-koulen text-4xl font-bold text-black">6</span>
+							</div>
+							<p className="font-dm_sans italic">
+								How well it creates psychological impact to frame public figures by media coverage
+							</p>
+						</div>
+						<div className="flex items-center gap-6">
+							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+								<span className="font-koulen text-4xl font-bold text-black">7</span>
+							</div>
+							<p className="font-dm_sans italic">
+								How small-scale it used to prevent the spread of pathogens back to the attacker
+							</p>
+						</div>
+					</div>
+					<div>
+						<h1 className="font-koulen rounded-2xl bg-[#E4E9F0] p-2 text-center text-4xl md:p-5">
+							Historical Development and Use of Biological Weapons
+						</h1>
+					</div>
+					<h2 className="font-koulen text-2xl">600-300 BC</h2>
+					<div>
+						The first instance of biological agents in warfare can be traced back to 600 BC, when
+						the Assyrians used fungal toxins to poison the wells of their enemies and gain military
+						advantages. Similarly in 300 BC, the Greeks, Romans, and Persians contaminated enemy
+						water wells with animal cadavers.
+					</div>
+					<h2 className="font-koulen text-2xl">12th-15th Century</h2>
+					<div>
+						Around the 12th century, the same strategy was used by Emperor Barbarossa&apos;s troops
+						during the siege of Tortona in Italy. Modern sources report over a thousand decomposing
+						corpses of soldiers and animals were used to contaminate enemy water wells.
+					</div>
+					<div>
+						One of the most well known early attempts of bioterrorism in the 14th century is the
+						medieval siege of Kaffa. The Mongol Tartar army thought of catapulting dead corpses of
+						their comrades within the walls of Kaffa. The infected Genoese fled from Kaffa,
+						weakening the defense and forcing a retreat. Modern sources speculate that the black
+						plague spread to other parts of Europe from the escaping Kaffa victims.
+					</div>
+					<div>
+						Similarly, Lithuanian soldiers catapulted corpses of dead soldiers in the city during
+						the siege of Carolstein in 1422. Lethal fevers dispersed throughout the area,
+						frightening the people in the community.
+					</div>
+					<h2 className="font-koulen text-2xl">12th-15th Century</h2>
+					<div>
+						In the summer of 1763, during the French-Indian war, British officers distributed
+						blankets infected with smallpox to Indian tribes that were hostile to the British.
+						During the American Revolutionary War (1776-1781), anecdotal references suggest attempts
+						to use infected British soldiers to spread smallpox. In the American Civil War, there
+						are unverified claims that contaminated clothing may have been used, causing widespread
+						disease.
+					</div>
+					<h2 className="font-koulen text-2xl">
+						20th Century (The rise of modern biological weapons)
+					</h2>
+					<div>
+						During World War I, it was frequently reported that cattle from Germans sent into enemy
+						states had <i>Bacillus anthracis</i> and <i>Pseudomonas mallei</i>, causing severe
+						diseases such as anthrax and glanders. The events of World War I have led to the
+						drafting of the 1925 Geneva Protocol for the Prohibition of the Use in War of
+						Asphyxiating, Poisonous or Other Gases and of Bacteriological Methods of Warfare.
+					</div>
+					<div>
+						Despite the Geneva protocol, biological weapons were expected to be used in the event of
+						a World War II. Multiple countries started conducting research programs to develop
+						bioweapons. Japan's infamous Unit 731 was considered as the most ambitious, spearheaded
+						by Lieutenant general Ishii, conducting experiments on war prisoners, including Koreans,
+						Chinese, and Russian soldiers. Experiments included the use of <i>Yersinia pestis</i>{" "}
+						(Plague), <i>Vibrio cholerae</i> (Water Safety threats), <i>Neisseria meningitidis</i>,
+						and <i>Bacillus anthracis</i> (Anthrax). The British army also experimented on Anthrax
+						bombs.
+					</div>
+					<div>
+						During this period, the United States was far behind other nations in bioweapon
+						research. After World War II, their scientific progress significantly hastened after
+						they received the Japanese Unit 731 experiment results while working with the former
+						director of Unit 731, Lt. Gen. Ishii.
+					</div>
+					<div>
+						The United States has conducted experiments on civilians during their research. In
+						September 1950, San Francisco Bay was clouded with <i>Serratia marcescens</i>, a skin
+						and respiratory tract infecting pathogen. Roughly one million people were unknowingly
+						exposed during this covert operation, with several individuals having respiratory
+						diseases, with a few of them dying in the process. Later in the decade, swarms of
+						mosquitoes with yellow fevers were released in Georgia and Florida to verify the
+						country&apos;s vulnerability in case of an air attack. In the New York Subway of Summer
+						1966, the pathogen <i>Bacillus subtilis</i> was released from a single station and
+						spread throughout the whole subway network. In 1969, the former president of United
+						States Nixon halted the program, shifting their research from offensive bioweapons to
+						defensive countermeasures.
+					</div>
+					<div>
+						In 1972, the Biological and Toxin Weapons Convention (BTWC) was negotiated, signed, and
+						ratified. While many countries signed the treaty, several countries continued
+						researching for potential bioweapons. Among these is the United Soviet Socialist
+						Republics, who formed the organization Chief Directorate for Biological Preparation
+						(Biopreparat) aiming to develop bioweapons that are new, lethal, easily dispersed, and
+						difficult to identify. The organization reportedly used genetic engineering in
+						biological agents to enhance its aggressiveness. From the mid-1980s until the present,
+						the number of subnational terrorist and radical groups that are independently working on
+						offensive use of biological weapons were reportedly increasing.
+					</div>
+					<h2 className="font-koulen text-2xl">Notable Recent Examples of Bioterrorism</h2>
+					<div>
+						In the autumn of 2001, a series of letters containing anthrax spores were sent by mail
+						to US senators, journalists, and media buildings. In the process, 22 people were
+						seriously injured, five of whom died, and probably thousands were contaminated and
+						advised to use antibiotics for an extended period of time. The event caused much anxiety
+						and stress, and the direct and indirect costs related to the investigation, clean-up and
+						installation of detection equipment, scanning mail and other measures to prevent further
+						attacks were high. Furthermore, the quality of life of those involved at the time has
+						been badly affected. To this day, powdered letters are a regular phenomenon worldwide,
+						usually containing hoax materials, but occasionally containing other toxic materials
+						such as ricin.
 					</div>
 				</div>
 			</div>
