@@ -42,8 +42,7 @@ const sections = [
 ];
 
 export default function Home() {
-	const [activeSection, setActiveSection] = useState(null);
-	const [scrolledSections, setScrolledSections] = useState({});
+	const [activeSection, setActiveSection] = useState("");
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -51,10 +50,6 @@ export default function Home() {
 				entries.forEach((entry) => {
 					if (entry.isIntersecting) {
 						setActiveSection(entry.target.id);
-						setScrolledSections((prev) => ({
-							...prev,
-							[entry.target.id]: true,
-						}));
 					}
 				});
 			},
@@ -76,7 +71,7 @@ export default function Home() {
 		};
 	}, []);
 
-	const getDotColor = (sectionId) => {
+	const getDotColor = (sectionId: string) => {
 		if (activeSection === sectionId) {
 			return "bg-blue-300";
 		}
@@ -84,7 +79,7 @@ export default function Home() {
 		return "bg-white";
 	};
 
-	const scrollToSection = (sectionId) => {
+	const scrollToSection = (sectionId: string) => {
 		const element = document.getElementById(sectionId);
 		if (element) {
 			const headerHeight = 80;

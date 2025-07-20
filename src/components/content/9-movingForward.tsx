@@ -1,5 +1,5 @@
-import DevelopmentOfPreparationAndMitigationStrategies from "@/components/content/movinngForward/dev-of-prep-and-miti-strat";
-import DevelopmentInBiotechnologyFromTheCOVID19Experience from "@/components/content/movinngForward/dev-in-biotech-from-covid";
+import DevelopmentOfPreparationAndMitigationStrategies from "@/components/content/movingForward/dev-of-prep-and-miti-strat";
+import DevelopmentInBiotechnologyFromTheCOVID19Experience from "@/components/content/movingForward/dev-in-biotech-from-covid";
 
 export default function MovingForward() {
 	return (
@@ -18,7 +18,7 @@ export default function MovingForward() {
 			<div>
 				<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:md:w-1/2">
 					<div>
-						<h3 className="text-3xl font-bold text-center">Moving Forward</h3>
+						<h3 className="font-koulen text-center text-3xl">Moving Forward</h3>
 						<div className="text-justify text-lg">
 							Looking at the current advancements in biotechnology, there are plentiful
 							biotechnology that could be used for future biological threats. Despite the broad

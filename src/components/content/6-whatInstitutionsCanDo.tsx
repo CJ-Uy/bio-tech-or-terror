@@ -1,18 +1,18 @@
 import Image from "next/image";
 
-const MainListItem = ({ number, title }) => (
+const MainListItem = ({ number, title }: { number: string; title: string }) => (
 	<div className="flex items-start gap-4 pt-4">
 		{" "}
 		{/* Use items-start for long titles */}
 		<div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-lg bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-			<span className="font-sans text-2xl font-semibold text-black">{number}</span>
+			<span className="font-koulen text-2xl font-semibold text-black">{number}</span>
 		</div>
 		<p className="pt-2 italic">{title}</p>
 	</div>
 );
 
 // A reusable component for the sub-item
-const SubListItem = ({ text }) => (
+const SubListItem = ({ text }: { text: string }) => (
 	<p className="pl-[68px] text-base text-gray-700">
 		{" "}
 		{/* 12 (w) + 16 (gap) + 40 (indent) = 68px */}
@@ -72,7 +72,7 @@ export default function WhatInstitutionsCanDo() {
 			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:[&>*]:text-justify [&>*]:md:w-3/4 [&>*]:[&_div]:text-lg">
 				{/* GOVERNMENTS Left Column */}
 				<div>
-					<h2 className="text-2xl font-bold">Governments</h2>
+					<h2 className="font-koulen text-2xl">Governments</h2>
 					<div>
 						The government&apos;s role is vital in preparing and responding against bioterrorism and
 						biowarfare by implementing regulations and measurement that enhance clinical
@@ -104,7 +104,7 @@ export default function WhatInstitutionsCanDo() {
 						government implementation, it can effectively catch attention, improve response and
 						promote appropriate action.
 					</div>
-					<h2 className="text-2xl font-bold">Interdiscipline</h2>
+					<h2 className="font-koulen text-2xl">Interdiscipline</h2>
 					<div>
 						A stronger collaboration in fighting these biothreat agents among scientific and
 						healthcare professionals, along with government and institutions, will facilitate
@@ -127,7 +127,7 @@ export default function WhatInstitutionsCanDo() {
 
 			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:[&>*]:text-justify [&>*]:[&_div]:text-lg">
 				<div>
-					<h2 className="mt-2 text-2xl font-bold">Scientific and Health Care Professionals</h2>
+					<h2 className="font-koulen mt-2 text-2xl">Scientific and Health Care Professionals</h2>
 					<div>
 						The increase of biowarfare threat agents demands proper precautions, while it can be
 						mitigated through immunization, pre- and post- exposure prophylaxis, therapeutics and
@@ -142,7 +142,7 @@ export default function WhatInstitutionsCanDo() {
 			</div>
 			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:[&>*]:text-justify [&>*]:md:w-3/4 [&>*]:[&_div]:text-lg">
 				<div>
-					<h3 className="text-xl font-bold">I. Critical Care and Clinical Response</h3>
+					<h3 className="font-koulen text-xl">I. Critical Care and Clinical Response</h3>
 					<div>
 						Health care providers must be equipped to provide care during stressful conditions but
 						still address emergency protocols, among these frontliners are the clinical care
@@ -176,7 +176,7 @@ export default function WhatInstitutionsCanDo() {
 					</div>
 				</div>
 				<div>
-					<h3 className="text-xl font-bold">II. Scientific Prescriptions for Biodefense</h3>
+					<h3 className="font-koulen text-xl">II. Scientific Prescriptions for Biodefense</h3>
 					<div>
 						Casadevall (2012) outlines several prescriptions to strengthen biodefense including the
 						ongoing advancement of specific diagnostic assays and countermeasures like vaccines,
@@ -206,7 +206,7 @@ export default function WhatInstitutionsCanDo() {
 			</div>
 			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:[&>*]:text-justify [&>*]:md:w-3/4 [&>*]:[&_div]:text-lg">
 				<div>
-					<h3 className="text-xl font-bold">III. Medical Intelligence</h3>
+					<h3 className="font-koulen text-xl">III. Medical Intelligence</h3>
 					<div>
 						In strengthening biodefense, Gisselsson (2022), emphasized that medical intelligence is
 						essential through (1) an updated and thorough assessment of the technological capacity
@@ -229,7 +229,7 @@ export default function WhatInstitutionsCanDo() {
 					</div>
 				</div>
 				<div>
-					<h3 className="text-xl font-bold">IV. Veterinary Surveillance</h3>
+					<h3 className="font-koulen text-xl">IV. Veterinary Surveillance</h3>
 					<div>
 						Bedada et al. (2017) emphasized the role of veterinarians and veterinary diagnostic
 						laboratories on participating nationwide active surveillance systems for bioterrorism.
