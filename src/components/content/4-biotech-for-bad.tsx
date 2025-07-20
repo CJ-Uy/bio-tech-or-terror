@@ -415,7 +415,7 @@ export default function BiotechForBad() {
 					<div>
 						Despite the Geneva protocol, biological weapons were expected to be used in the event of
 						a World War II. Multiple countries started conducting research programs to develop
-						bioweapons. Japan's infamous Unit 731 was considered as the most ambitious, spearheaded
+						bioweapons. Japan&apos;s infamous Unit 731 was considered as the most ambitious, spearheaded
 						by Lieutenant general Ishii, conducting experiments on war prisoners, including Koreans,
 						Chinese, and Russian soldiers. Experiments included the use of <i>Yersinia pestis</i>{" "}
 						(Plague), <i>Vibrio cholerae</i> (Water Safety threats), <i>Neisseria meningitidis</i>,
