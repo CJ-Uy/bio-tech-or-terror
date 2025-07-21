@@ -20,11 +20,11 @@ const MainListItem = ({
 );
 
 // A reusable component for the sub-item
-const SubListItem = ({ text }: { text: string }) => (
+const SubListItem = ({ text, spacer }: { text: string; spacer?: boolean }) => (
 	<p className="!my-0 !ml-[68px] !py-0 text-base text-gray-700">
 		{" "}
 		{/* 12 (w) + 16 (gap) + 40 (indent) = 68px */}
-		<span className="mr-2">-</span>
+		<span className="mr-2">{spacer ? "" : "-"}</span>
 		{text}
 	</p>
 );
@@ -229,7 +229,7 @@ export default function MovingForward() {
 						have been approved for worldwide use. These vaccines can be classified under different
 						types of vaccine platforms:
 					</div>
-					<div className="grid grid-cols-1 items-start !pt-0 md:grid-cols-2 md:gap-x-15 [&>*]:[&>*]:my-5 [&>*]:my-0 [&>*]:[&>*]:!px-1 [&>*]:[&>*]:!py-1 [&>*]:py-0">
+					<div className="grid grid-cols-1 items-start md:grid-cols-2 md:gap-x-15 [&>*]:[&>*]:my-5 [&>*]:my-0 [&>*]:[&>*]:!px-1 [&>*]:[&>*]:!py-1 [&>*]:py-0">
 						<div>
 							<MainListItem number="1" title="Viral Vector Vaccines" hasSublist />
 							<SubListItem text="Non-replicating Viral Vector Vaccines" />
@@ -239,11 +239,15 @@ export default function MovingForward() {
 							<SubListItem text="DNA Vaccines" />
 							<SubListItem text="mRNA Vaccines" />
 						</div>
-						<div className="!flex !flex-col md:!space-y-16">
+						<div>
 							<MainListItem
 								number="3"
 								title="Vaccines based on recombinant proteins (subunit and VLPs virus-like particle)"
 							/>
+							<div className="hidden md:block [&>*]:md:!my-1">
+								<SubListItem text="" spacer />
+								<SubListItem text="" spacer />
+							</div>
 							<MainListItem number="4" title="Virus-based" hasSublist />
 							<SubListItem text="Live Attenuated Vaccines" />
 							<SubListItem text="Inactivated Virus Vaccines" />
