@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 	title: "Bio: Tech or Terror",
 	description: "Bio12.01-F MitochonLIMA",
 	icons: {
-		icon: "svgs/favicon 1.svg",
+		icon: "svgs/favicon 2.svg",
 	},
 };
 
