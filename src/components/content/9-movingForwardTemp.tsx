@@ -229,7 +229,7 @@ export default function MovingForward() {
 						have been approved for worldwide use. These vaccines can be classified under different
 						types of vaccine platforms:
 					</div>
-					<div className="grid grid-cols-1 items-start md:grid-cols-2 md:gap-x-15">
+					<div className="grid grid-cols-1 items-start !pt-0 md:grid-cols-2 md:gap-x-15 [&>*]:[&>*]:my-5 [&>*]:my-0 [&>*]:[&>*]:!px-1 [&>*]:[&>*]:!py-1 [&>*]:py-0">
 						<div>
 							<MainListItem number="1" title="Viral Vector Vaccines" hasSublist />
 							<SubListItem text="Non-replicating Viral Vector Vaccines" />
@@ -239,7 +239,7 @@ export default function MovingForward() {
 							<SubListItem text="DNA Vaccines" />
 							<SubListItem text="mRNA Vaccines" />
 						</div>
-						<div>
+						<div className="!flex !flex-col md:!space-y-16">
 							<MainListItem
 								number="3"
 								title="Vaccines based on recombinant proteins (subunit and VLPs virus-like particle)"
@@ -247,7 +247,6 @@ export default function MovingForward() {
 							<MainListItem number="4" title="Virus-based" hasSublist />
 							<SubListItem text="Live Attenuated Vaccines" />
 							<SubListItem text="Inactivated Virus Vaccines" />
-							{/* The <br /> tag has been removed from here */}
 						</div>
 					</div>
 					<h2 className="font-dm_sans !pb-0 text-xl italic">
