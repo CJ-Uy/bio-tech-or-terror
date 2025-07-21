@@ -22,7 +22,7 @@ export default function WhatYouCanDo() {
 					</div>
 					<div>
 						<Image
-							src="/svgs/family dommsday preppers.svg"
+							src="/svgs/doomsday prep.svg"
 							alt="doomsday preparation"
 							width={300}
 							height={200}
