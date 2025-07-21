@@ -35,7 +35,7 @@ export default function BiotechForBad() {
 									className="h-full w-full object-cover"
 								/>
 							</div>
-							Bacterial
+							Bacteria
 						</div>
 						<div>
 							<div>
@@ -47,7 +47,7 @@ export default function BiotechForBad() {
 									className="h-full w-full object-cover"
 								/>
 							</div>
-							Viral
+							Virus
 						</div>
 						<div>
 							<div>
