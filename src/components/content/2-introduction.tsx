@@ -39,13 +39,13 @@ export default function Introduction() {
 			<div>
 				<div>
 					<Image
-						src="/svgs/biosuits.svg"
-						alt="biosuits"
+						src="/svgs/biowarefare.svg"
+						alt="mask"
 						width={300}
 						height={200}
 						style={{ width: "100%", height: "auto" }}
 					/>
-					<a href="https://images.app.goo.gl/u3C3UKwy1rhfjq178">Source: nti.org</a>
+					<a href="https://canva.com">Source: canva.com</a>
 				</div>
 				<div>
 					While these biological attacks are alarming, hope is not lost. Despite the increasing

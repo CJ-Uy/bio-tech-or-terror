@@ -23,14 +23,12 @@ export default function WhatYouCanDo() {
 					<div>
 						<Image
 							src="/svgs/family dommsday preppers.svg"
-							alt="petri dish"
+							alt="doomsday preparation"
 							width={300}
 							height={200}
 							style={{ width: "100%", height: "auto" }}
 						/>
-						<a href="https://theintercept.com/wp-content/uploads/2021/06/intercept-bunker-1.jpg?fit=2000%2C1332">
-							Source: theintercept.com
-						</a>
+						<a href="https://canva.com">Source: canva.com</a>
 					</div>
 					<div>
 						The U.S. Department of Homeland Security, through their website Ready.org, categorizes
@@ -58,12 +56,6 @@ export default function WhatYouCanDo() {
 								Keep immunizations and immunization records up-to-date.
 							</p>
 						</div>
-					</div>
-				</div>
-
-				{/* Right Column */}
-				<div>
-					<div className="flex flex-col gap-y-5">
 						{/* Item 3 */}
 						<div className="flex items-center gap-6">
 							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
@@ -84,6 +76,10 @@ export default function WhatYouCanDo() {
 							</p>
 						</div>
 					</div>
+				</div>
+
+				{/* Right Column */}
+				<div>
 					<div>
 						During a possible biohazard event, people should stay tuned to the news on the
 						television, internet, or radio for the latest information regarding the symptoms and

@@ -45,18 +45,15 @@ export default function WhatInstitutionsCanDo() {
 					<div>
 						<div className="flex flex-col items-center justify-center">
 							<Image
-								src="/svgs/whoMeeting.svg"
-								alt="Meeting at the WHO"
+								src="/svgs/institutions.svg"
+								alt="meeting"
 								width={300}
 								height={200}
 								className="h-auto w-[100%] md:w-[70%]"
 							/>
 						</div>
-						<a
-							className="ml-[15%]"
-							href="https://th.bing.com/th/id/OIP.QjKklDk-C7S67bx18nFhagHaE5?o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3"
-						>
-							Source: libyaobserver.ly
+						<a className="md:ml-[15%]" href="canva.com">
+							Source: canva.com
 						</a>
 					</div>
 					<div>
@@ -225,7 +222,7 @@ export default function WhatInstitutionsCanDo() {
 						faster identification; ensuring secure data transmission and storage, along with
 						computational capabilities to analyze biological data and direct information to vaccine
 						producers and lastly regularly updating expert scientists and health professionals to
-						ensure connection and respond when emergency happened
+						ensure connection and respond when emergency happens
 					</div>
 				</div>
 				<div>

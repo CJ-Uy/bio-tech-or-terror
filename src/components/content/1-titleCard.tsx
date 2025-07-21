@@ -29,7 +29,7 @@ export default function TitleCard() {
 
 			{/* Title Text (bottom left) */}
 			<div className="absolute bottom-10 left-10 mr-10 text-white md:bottom-20 md:left-20 md:mr-20">
-				<h1 className="text-shadow font-koulen text-5xl font-extrabold tracking-widest md:text-7xl">
+				<h1 className="text-shadow font-koulen text-5xl font-extrabold md:text-7xl">
 					BIO: TECH OR TERROR
 				</h1>
 				<h2 className="font-dm_sans mt-2 text-lg text-gray-300 md:text-xl">

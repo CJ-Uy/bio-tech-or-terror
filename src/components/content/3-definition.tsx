@@ -12,15 +12,13 @@ export default function Definition() {
 				<div>
 					<div>
 						<Image
-							src="/svgs/petri dish.svg"
+							src="/svgs/bioterrorism.svg"
 							alt="petri dish"
 							width={300}
 							height={200}
 							style={{ width: "100%", height: "auto" }}
 						/>
-						<a href="https://www.oculyze.net/wp-content/uploads/2023/09/Agar-Plates-vs-Petri-Dish.jpg">
-							Source: oculyze.net
-						</a>
+						<a href="https://canva.com">Source: canva.com</a>
 					</div>
 					<div>
 						Bioterrorism refers to the deliberate or threatened use of biological agents; virus,

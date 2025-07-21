@@ -33,17 +33,14 @@ export default function DevelopmentInBiotechnologyFromTheCOVID19Experience() {
 						<div className="flex items-center justify-center">
 							<Image
 								src="/svgs/covid.svg"
-								alt="petri dish"
+								alt="covid preparation"
 								width={300}
 								height={200}
 								className="h-auto w-[100%] md:w-[70%]"
 							/>
 						</div>
-						<a
-							className="ml-[15%]"
-							href="https://static01.nyt.com/images/2020/03/24/world/24china-virus01/merlin_170897688_a14ebbe8-c857-40c8-ba76-3eb796db86c1-superJumbo.jpg?quality=75&auto=webp"
-						>
-							Source: The New York Times
+						<a className="ml-[15%]" href="canva.com">
+							Source: canva.com
 						</a>
 					</div>
 					<div className="text-justify">
@@ -59,7 +56,7 @@ export default function DevelopmentInBiotechnologyFromTheCOVID19Experience() {
 
 			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:md:w-1/2 [&>*]:[&_div]:text-lg">
 				<div>
-					<h4 className="-mb-6 text-justify text-2xl md:text-center">I. Diagnostics</h4>
+					<h4 className="font-koulen -mb-6 text-justify text-2xl md:text-center">I. Diagnostics</h4>
 					<div className="text-justify">
 						In the event of biological attacks, diagnostics tests are pivotal in determining the
 						severity and transmissibility of an illness. Identifying the disease&apos;s threat as
@@ -103,7 +100,9 @@ export default function DevelopmentInBiotechnologyFromTheCOVID19Experience() {
 					</div>
 				</div>
 				<div>
-					<h4 className="-mb-6 text-justify text-2xl md:text-center">II. Vaccine Platform</h4>
+					<h4 className="font-koulen -mb-6 text-justify text-2xl md:text-center">
+						II. Vaccine Platform
+					</h4>
 					<div className="text-justify">
 						Developing vaccines often have poor success rates and often takes around 10 to 15 years.
 						Because of the pandemic&apos;s threat, urgent breakthroughs in vaccine development
@@ -145,7 +144,7 @@ export default function DevelopmentInBiotechnologyFromTheCOVID19Experience() {
 
 			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:md:w-4/5 [&>*]:[&_div]:text-lg">
 				<div>
-					<h4 className="-mb-6 text-justify text-2xl md:text-center">
+					<h4 className="font-koulen -mb-6 text-justify text-2xl md:text-center">
 						III. Immunoinformatics in Vaccine Preparation
 					</h4>
 					<div className="text-justify">
@@ -160,7 +159,7 @@ export default function DevelopmentInBiotechnologyFromTheCOVID19Experience() {
 
 			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:md:w-4/5 [&>*]:[&_div]:text-lg">
 				<div>
-					<h4 className="-mb-6 text-justify text-2xl md:text-center">
+					<h4 className="font-koulen -mb-6 text-justify text-2xl md:text-center">
 						IV. Artificial Intelligence (AI) in the Pandemic Times
 					</h4>
 					<div className="text-justify">

@@ -33,12 +33,12 @@ export default function DevelopmentOfPreparationAndMitigationStrategies() {
 				<div>
 					<Image
 						src="/svgs/un convention.svg"
-						alt="petri dish"
+						alt="flags"
 						width={300}
 						height={200}
 						style={{ width: "100%", height: "auto" }}
 					/>
-					<a href="https://legal.un.org/avl/images/ha/cpdpsucw/09-l.jpg">Source: legal.un.org</a>
+					<a href="https://canva.com">Source: canva.com</a>
 				</div>
 				{/* Use Grid for a responsive layout. 1 column on mobile, 2 on medium screens+ */}
 				<div className="grid grid-cols-1 gap-8 [&>*]:grid-cols-1 [&>*]:gap-8 [&>*]:md:grid-cols-2">

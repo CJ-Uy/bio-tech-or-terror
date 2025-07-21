@@ -84,14 +84,14 @@ export default function Page() {
 							) : (
 								// End Card Screen
 								<div className="animate-fade-in flex flex-col items-center">
-									<h1 className="mb-4 text-5xl font-bold text-black">Thank You for Playing!</h1>
-									<p className="mb-8 max-w-2xl text-lg text-black">
+									<h1 className="text-koulen mb-4 text-5xl font-bold">Thank You for Playing!</h1>
+									<p className="font-dm_sans mb-8 max-w-2xl text-lg text-black">
 										You have completed the COVID-19 Scientist Simulator. We hope you enjoyed
 										stepping into the shoes of the scientists who worked to save the world.
 									</p>
 									<Button
 										onClick={handleRedirectHome} // Use the new handler
-										className="transform rounded-lg bg-white/90 px-10 py-3 font-semibold text-gray-800 shadow-md transition-all duration-300 hover:scale-105 hover:bg-white"
+										className="font-dm_sans transform rounded-lg bg-white/90 px-10 py-3 font-semibold text-gray-800 shadow-md transition-all duration-300 hover:scale-105 hover:bg-white"
 									>
 										Back to Home
 									</Button>

@@ -50,14 +50,12 @@ export default function PhBiowarfare() {
 				<div>
 					<Image
 						src="/svgs/ph biowarfare.svg"
-						alt="petri dish"
+						alt="Biowarfare in the Philippines"
 						width={300}
 						height={200}
 						style={{ width: "100%", height: "auto" }}
 					/>
-					<a href="https://www.manilatimes.net/manilatimes/uploads/images/2023/03/23/171207.jpg">
-						Source: manilatimes.net
-					</a>
+					<a href="https://canva.com">Source: canva.com</a>
 
 					<div>
 						These recent, serious efforts of the Philippines signal a growing national commitment to
