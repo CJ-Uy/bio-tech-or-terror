@@ -28,13 +28,13 @@ export default function BiotechForGood() {
 						four laboratory levels from A to D to ensure organized and effective handling of
 						biothreat agents.
 					</div>
-					<div className="my-0 py-0 [&>*]:!px-1 [&>*]:!py-1">
+					<div className="my-0 !py-0 [&>*]:my-5 [&>*]:!px-1 [&>*]:!py-1">
 						<div className="flex items-center gap-6">
 							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">A</span>
 							</div>
 							<p className="font-dm_sans italic">
-								often in standard clinic settings that serve as the first point of detection which
+								Often in standard clinic settings that serve as the first point of detection which
 								follow CDC standard guidelines on handling likely biothreat agents like Bacillus
 								anthracis, Yersinia pestis, and Francisella tularensis
 							</p>
@@ -44,8 +44,8 @@ export default function BiotechForGood() {
 								<span className="font-koulen text-4xl font-bold text-black">B</span>
 							</div>
 							<p className="font-dm_sans italic">
-								typically in public health laboratories that verifies the identity of the suspicious
-								organisms.
+								Typically in public health laboratories that verifies the identity of the suspicious
+								organisms
 							</p>
 						</div>
 						<div className="flex items-center gap-6">
@@ -54,7 +54,7 @@ export default function BiotechForGood() {
 							</div>
 							<p className="font-dm_sans italic">
 								More advanced testing to confirm the identity of species or strains using molecular
-								and typing methods.
+								and typing methods
 							</p>
 						</div>
 						<div className="flex items-center gap-6">
@@ -63,7 +63,7 @@ export default function BiotechForGood() {
 							</div>
 							<p className="font-dm_sans italic">
 								The highest level consists of facilities like CDC and US Army Medical Research
-								Institute of Infectious Diseases to handle advanced analysis on biothreat agents.
+								Institute of Infectious Diseases to handle advanced analysis on biothreat agents
 							</p>
 						</div>
 					</div>

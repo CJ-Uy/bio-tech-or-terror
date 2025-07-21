@@ -16,9 +16,8 @@ export default function MovingForward() {
 				<DevelopmentInBiotechnologyFromTheCOVID19Experience />
 			</div>
 			<div>
-				<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:md:w-1/2">
+				<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5">
 					<div>
-						<h3 className="font-koulen text-center text-3xl">Moving Forward</h3>
 						<div className="text-justify text-lg">
 							Looking at the current advancements in biotechnology, there are plentiful
 							biotechnology that could be used for future biological threats. Despite the broad

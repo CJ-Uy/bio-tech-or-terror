@@ -6,10 +6,10 @@ import TitleCard from "@/components/content/1-titleCard";
 import Introduction from "@/components/content/2-introduction";
 import Definition from "@/components/content/3-definition";
 import BiotechForBad from "@/components/content/4-biotech-for-bad";
-import WhatInstitutionsCanDo from "@/components/content/6-whatInstitutionsCanDo";
+import WhatInstitutionsCanDo from "@/components/content/6-whatInstitutionsCanDoTemp";
 import WhatYouCanDo from "@/components/content/7-whatYouCanDo";
 import PhBiowarfare from "@/components/content/8-phBiowarfare";
-import MovingForward from "@/components/content/9-movingForward";
+import MovingForward from "@/components/content/9-movingForwardTemp";
 import References from "@/components/content/10-references";
 import BiotechForGood from "@/components/content/5-biotech-for-good";
 
@@ -22,7 +22,7 @@ const sections = [
 	{ id: "biotech-for-good", label: "Biotech For Good", Component: BiotechForGood },
 	{
 		id: "what-institutions-can-do",
-		label: "WhatInstitutionsCanDo",
+		label: "What Institutions Can Do",
 		Component: WhatInstitutionsCanDo,
 	},
 	{ id: "what-you-can-do", label: "What You Can Do", Component: WhatYouCanDo },
@@ -75,7 +75,7 @@ export default function Home() {
 
 	const getDotColor = (sectionId: string) => {
 		if (activeSection === sectionId) {
-			return "bg-blue-300";
+			return "bg-[#5ac4b9]";
 		}
 
 		return "bg-white";

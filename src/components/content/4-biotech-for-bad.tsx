@@ -145,13 +145,13 @@ export default function BiotechForBad() {
 						dissemination. Given these factors, the US Centers for Disease Control and Prevention
 						(CDC) recognized three categories of Biological Agents (Bedada et al., 2017):
 					</div>
-					<div className="my-0 py-0 [&>*]:!px-1 [&>*]:!py-1">
+					<div className="my-0 !py-0 [&>*]:my-5 [&>*]:!px-1 [&>*]:!py-1">
 						<div className="flex items-center gap-6">
 							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">A</span>
 							</div>
 							<p className="font-dm_sans italic">
-								easily transmitted from person-to-person, high mortality rate, potential for major
+								Easily transmitted from person-to-person, high mortality rate, potential for major
 								public health impact
 							</p>
 						</div>
@@ -160,7 +160,7 @@ export default function BiotechForBad() {
 								<span className="font-koulen text-4xl font-bold text-black">B</span>
 							</div>
 							<p className="font-dm_sans italic">
-								easy to disseminate, moderate morbidity rates, low mortality rates
+								Easy to disseminate, moderate morbidity rates, low mortality rates
 							</p>
 						</div>
 						<div className="flex items-center gap-6">
@@ -168,7 +168,7 @@ export default function BiotechForBad() {
 								<span className="font-koulen text-4xl font-bold text-black">C</span>
 							</div>
 							<p className="font-dm_sans italic">
-								emerging pathogens that could be engineered for mass dissemination
+								Emerging pathogens that could be engineered for mass dissemination
 							</p>
 						</div>
 					</div>
@@ -176,7 +176,7 @@ export default function BiotechForBad() {
 						Among these classifications, Category A poses the highest risk for national security due
 						to the following features (Jansen et al., 2014):
 					</div>
-					<div className="my-0 py-0 [&>*]:!px-1 [&>*]:!py-1">
+					<div className="my-0 !py-0 [&>*]:my-5 [&>*]:!px-1 [&>*]:!py-1">
 						<div className="flex items-center gap-6">
 							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">1</span>
@@ -226,7 +226,7 @@ export default function BiotechForBad() {
 						The impact of a bioterrorist attack depends on the following factors (Bedada et al.,
 						2017):
 					</div>
-					<div className="my-0 py-0 [&>*]:!px-1 [&>*]:!py-1">
+					<div className="my-0 !py-0 [&>*]:my-5 [&>*]:!px-1 [&>*]:!py-1">
 						<div className="flex items-center gap-6">
 							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">1</span>
@@ -302,7 +302,7 @@ export default function BiotechForBad() {
 						No matter how small the biological attacks are, it can reach strategic levels of success
 						depending on (Gisselsson, 2022):
 					</div>
-					<div className="my-0 py-0 [&>*]:!px-1 [&>*]:!py-1">
+					<div className="my-0 !py-0 [&>*]:my-5 [&>*]:!px-1 [&>*]:!py-1">
 						<div className="flex items-center gap-6">
 							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">1</span>

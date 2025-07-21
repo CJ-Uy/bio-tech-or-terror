@@ -22,11 +22,13 @@ export default function About() {
 			{/* Content */}
 			<div className="flex h-screen w-screen flex-col items-center justify-center">
 				<h1 className="text-bold font-koulen text-center text-7xl md:text-9xl">MitochonLIMA</h1>
-				<h2 className="mx-9 mb-5 text-center text-2xl">
+				<h2 className="font-dm_sans mx-9 mb-5 text-center text-2xl">
 					Bautisa, Jeconiah &nbsp;&nbsp;&nbsp; Celestino, Kenaz &nbsp;&nbsp;&nbsp; Figuerres, Justin
 					&nbsp;&nbsp;&nbsp; Manansala, Charlisze &nbsp;&nbsp;&nbsp; Uy, Charles Joshua
 				</h2>
-				<p>This project was created for our BIO 12.01-F. LOVE YOU MAAM FISHDALISCIOUS</p>
+				<p className="font-dm_sans">
+					This project was created for our BIO 12.01-F. LOVE YOU MAAM FISHDALISCIOUS
+				</p>
 			</div>
 		</div>
 	);

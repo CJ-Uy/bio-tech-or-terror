@@ -24,7 +24,7 @@ const SubListItem = ({ text }: { text: string }) => (
 export default function DevelopmentInBiotechnologyFromTheCOVID19Experience() {
 	return (
 		<div>
-			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:md:w-4/5 [&>*]:[&_div]:text-lg">
+			<div className="[&>*]:[&_div]:font-dm_sans block h-auto md:flex md:px-25 [&>*]:mx-auto [&>*]:block [&>*]:overflow-auto [&>*]:[&>*]:px-10 [&>*]:[&>*]:py-5 [&>*]:[&_div]:text-lg">
 				<div>
 					<h3 className="font-koulen -mb-3 text-justify text-3xl md:text-center">
 						Development of Preparation & Mitigation Strategies
@@ -120,24 +120,21 @@ export default function DevelopmentInBiotechnologyFromTheCOVID19Experience() {
 							<MainListItem number="2" title="Nucleic Acid Vaccines" />
 							<SubListItem text="DNA Vaccines" />
 							<SubListItem text="mRNA Vaccines" />
-
+						</div>
+						<div>
 							<MainListItem
 								number="3"
 								title="Vaccines based on recombinant proteins (subunit and VLPs virus-like particle)"
 							/>
-						</div>
-						<div>
 							<MainListItem number="4" title="Virus-based" />
 							<SubListItem text="Live Attenuated Vaccines" />
 							<SubListItem text="Inactivated Virus Vaccines" />
 							<br />
-							<div>
-								Moreover, developed understanding of vaccines has brought suggestions to potential
-								next-generation vaccines:
-							</div>
-							<MainListItem number="1" title="Mucosal Vaccines" />
-							<MainListItem number="2" title="Edible Vaccines" />
 						</div>
+					</div>
+					<div>
+						Moreover, developed understanding of vaccines has brought suggestions to potential
+						next-generation vaccines such as mucosal vaccines and edible vaccines.
 					</div>
 				</div>
 			</div>

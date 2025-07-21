@@ -58,20 +58,20 @@ export default function Definition() {
 							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">1</span>
 							</div>
-							<p className="font-dm_sans italic">a diverse array of potential biological agents</p>
+							<p className="font-dm_sans italic">A diverse array of potential biological agents</p>
 						</div>
 						<div className="flex items-center gap-6">
 							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">2</span>
 							</div>
-							<p className="font-dm_sans italic">broad range of potential targets</p>
+							<p className="font-dm_sans italic">Broad range of potential targets</p>
 						</div>
 						<div className="flex items-center gap-6">
 							<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
 								<span className="font-koulen text-4xl font-bold text-black">3</span>
 							</div>
 							<p className="font-dm_sans italic">
-								the consequences of biological agents used as a weapon.
+								The consequences of biological agents used as a weapon
 							</p>
 						</div>
 					</div>

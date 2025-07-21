@@ -40,55 +40,42 @@ export default function DevelopmentOfPreparationAndMitigationStrategies() {
 					/>
 					<a href="https://canva.com">Source: canva.com</a>
 				</div>
-				{/* Use Grid for a responsive layout. 1 column on mobile, 2 on medium screens+ */}
-				<div className="grid grid-cols-1 gap-8 [&>*]:grid-cols-1 [&>*]:gap-8 [&>*]:md:grid-cols-2">
-					<div className="grid">
-						{/* Item 1 */}
-						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-								<span className="font-koulen text-4xl font-bold text-black">1</span>
-							</div>
-							<p className="font-dm_sans text-left italic">Increased vigilance</p>
+				<div className="my-0 !pt-0 md:grid md:grid-flow-col md:grid-cols-2 md:grid-rows-3 [&>*]:my-5 [&>*]:!px-5 [&>*]:!py-1">
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">1</span>
 						</div>
-						{/* Item 2 */}
-						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-								<span className="font-koulen text-4xl font-bold text-black">2</span>
-							</div>
-							<p className="font-dm_sans text-left italic">Detection devices</p>
-						</div>
+						<p className="font-dm_sans italic">Increased vigilance</p>
 					</div>
-					<div className="grid">
-						{/* Item 3 */}
-						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-								<span className="font-koulen text-4xl font-bold text-black">3</span>
-							</div>
-							<p className="font-dm_sans text-left italic">Diagnostics</p>
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">2</span>
 						</div>
-						{/* Item 4 */}
-						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-								<span className="font-koulen text-4xl font-bold text-black">4</span>
-							</div>
-							<p className="font-dm_sans text-left italic">Vaccines</p>
-						</div>
+						<p className="font-dm_sans italic">Detection devices</p>
 					</div>
-					<div className="grid">
-						{/* Item 5 */}
-						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-								<span className="font-koulen text-4xl font-bold text-black">5</span>
-							</div>
-							<p className="font-dm_sans text-left italic">Drugs</p>
+					<div className="flex items-center gap-4">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">3</span>
 						</div>
-						{/* Item 6 */}
-						<div className="flex items-center gap-6">
-							<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-								<span className="font-koulen text-4xl font-bold text-black">6</span>
-							</div>
-							<p className="font-dm_sans text-left italic">Therapeutic immunoglobulins</p>
+						<p className="font-dm_sans italic">Diagnostics</p>
+					</div>
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">4</span>
 						</div>
+						<p className="font-dm_sans italic">Vaccines</p>
+					</div>
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">5</span>
+						</div>
+						<p className="font-dm_sans italic">Drugs</p>
+					</div>
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">6</span>
+						</div>
+						<p className="font-dm_sans italic">Therapeutic immunoglobulins</p>
 					</div>
 				</div>
 			</div>
@@ -100,41 +87,37 @@ export default function DevelopmentOfPreparationAndMitigationStrategies() {
 					of a biological agent, and attempt identifying other potentially dangerous microbes using
 					an algorithm. The algorithm parameters include:
 				</div>
-				{/* Item 1 */}
-				<div className="flex flex-row-reverse items-center gap-6">
-					<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-						<span className="font-koulen text-4xl font-bold text-black">1</span>
+				<div className="my-0 !pt-0 [&>*]:my-5 [&>*]:!px-5 [&>*]:!py-1">
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">1</span>
+						</div>
+						<p className="font-dm_sans italic">Mortality</p>
 					</div>
-					<p className="font-dm_sans text-left italic">Mortality</p>
-				</div>
-
-				{/* Item 2 */}
-				<div className="flex flex-row-reverse items-center gap-6">
-					<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-						<span className="font-koulen text-4xl font-bold text-black">2</span>
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">2</span>
+						</div>
+						<p className="font-dm_sans italic">Need for hospitalization</p>
 					</div>
-					<p className="font-dm_sans text-left italic">Need for hospitalization</p>
-				</div>
-				{/* Item 3 */}
-				<div className="flex flex-row-reverse items-center gap-6">
-					<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-						<span className="font-koulen text-4xl font-bold text-black">3</span>
+					<div className="flex items-center gap-4">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">3</span>
+						</div>
+						<p className="font-dm_sans italic">Likelihood for dissemination</p>
 					</div>
-					<p className="font-dm_sans text-left italic">Likelihood for dissemination</p>
-				</div>
-				{/* Item 4 */}
-				<div className="flex flex-row-reverse items-center gap-6">
-					<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-						<span className="font-koulen text-4xl font-bold text-black">4</span>
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">4</span>
+						</div>
+						<p className="font-dm_sans italic">Availability of countermeasures</p>
 					</div>
-					<p className="font-dm_sans text-left italic">Availability of countermeasures</p>
-				</div>
-				{/* Item 5 */}
-				<div className="flex flex-row-reverse items-center gap-6">
-					<div className="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
-						<span className="font-koulen text-4xl font-bold text-black">5</span>
+					<div className="flex items-center gap-6">
+						<div className="flex h-15 w-15 flex-shrink-0 items-center justify-center rounded-2xl bg-gradient-to-b from-[#89F6CB] to-[#509077]">
+							<span className="font-koulen text-4xl font-bold text-black">4</span>
+						</div>
+						<p className="font-dm_sans italic">Public perception</p>
 					</div>
-					<p className="font-dm_sans text-left italic">Public perception</p>
 				</div>
 			</div>
 		</div>
