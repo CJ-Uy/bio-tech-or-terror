@@ -24,13 +24,13 @@ export default function BiotechForBad() {
 						called Biological Agents. The US Centers for Disease Control and Prevention (CDC) has
 						identified and categorized these agents into (Christian, 2013):
 					</div>
-					<div className="flex flex-col gap-x-6 pt-0 md:flex-row [&>*]:block [&>*]:[&>*]:aspect-square [&>*]:grow [&>*]:p-2 [&>*]:text-center">
+					<div className="grid grid-cols-2 !pt-0 md:flex-row md:!px-32 [&>*]:[&>*]:aspect-square [&>*]:p-2 [&>*]:text-center">
 						<div>
 							<div>
 								<Image
 									src="/svgs/bacteria.svg"
 									alt="bacteria"
-									width={50}
+									width={300}
 									height={100}
 									className="h-full w-full object-cover"
 								/>
@@ -42,7 +42,7 @@ export default function BiotechForBad() {
 								<Image
 									src="/svgs/virus.svg"
 									alt="virus"
-									width={100}
+									width={300}
 									height={300}
 									className="h-full w-full object-cover"
 								/>
@@ -415,12 +415,12 @@ export default function BiotechForBad() {
 					<div>
 						Despite the Geneva protocol, biological weapons were expected to be used in the event of
 						a World War II. Multiple countries started conducting research programs to develop
-						bioweapons. Japan&apos;s infamous Unit 731 was considered as the most ambitious, spearheaded
-						by Lieutenant general Ishii, conducting experiments on war prisoners, including Koreans,
-						Chinese, and Russian soldiers. Experiments included the use of <i>Yersinia pestis</i>{" "}
-						(Plague), <i>Vibrio cholerae</i> (Water Safety threats), <i>Neisseria meningitidis</i>,
-						and <i>Bacillus anthracis</i> (Anthrax). The British army also experimented on Anthrax
-						bombs.
+						bioweapons. Japan&apos;s infamous Unit 731 was considered as the most ambitious,
+						spearheaded by Lieutenant general Ishii, conducting experiments on war prisoners,
+						including Koreans, Chinese, and Russian soldiers. Experiments included the use of{" "}
+						<i>Yersinia pestis</i> (Plague), <i>Vibrio cholerae</i> (Water Safety threats),{" "}
+						<i>Neisseria meningitidis</i>, and <i>Bacillus anthracis</i> (Anthrax). The British army
+						also experimented on Anthrax bombs.
 					</div>
 					<div>
 						During this period, the United States was far behind other nations in bioweapon
